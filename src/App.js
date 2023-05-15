@@ -17,7 +17,7 @@ const App = () => {
       <RadioSelection name="Attieksme pret dabu?" values={["Pozitīva", "Neitrāla"]} handleChange={e => setFirstOption(e.target.value)}/>
       <RadioSelection name="Transporta līdzekļa veids?" values={["Personāls", "Koplietojams", "Sabiedriskais"]} handleChange={e => setSecondOption(e.target.value)}/>
       <RadioSelection name="Svarīgakais transporta līdzeklī?" values={["Elastīgums", "Kompaktums", "Budžets"]} handleChange={e => setThirdOption(e.target.value)}/>
-      <RadioSelection name="Transporta līdzekļa ātrums? (km/st.)" values={["5-15", "15-25", "25+"]} handleChange={e => setFourthOption(e.target.value)}/>
+      <RadioSelection name="Maksimālais transporta līdzekļa ātrums? (km/st.)" values={["5-15", "15-25", "25+"]} handleChange={e => setFourthOption(e.target.value)}/>
     </div>
 
     <Output firstOption={firstOption} secondOption={secondOption} thirdOption={thirdOption} fourthOption={fourthOption}/>

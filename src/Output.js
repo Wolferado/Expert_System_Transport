@@ -19,20 +19,22 @@ const Output = (props) => {
 
     else if (APD == "Neitrāla" && TLV == "Sabiedriskais" && STL == "Budžets" && TLA == "25+")
         result = "Sabiedriskais transports";
-    else if (APD == "Pozitīva" && TLV == "Koplietojams" && STL == "Budžets" && TLA == "25+") 
+    else if (APD == "Pozitīva" && TLV == "Sabiedriskais" && STL == "Budžets" && TLA == "25+") 
         result = "Ekoloģisks sabiedriskais transports";
 
     else if(APD == "Pozitīva" && TLV == "Personāls" && STL == "Elastīgums" && TLA == "5-15")
         result = "Divriteņi un to paveidi";
     else if(APD == "Pozitīva" && TLV == "Koplietojams" && STL == "Elastīgums" && TLA == "5-15")
-        result = "Divriteņu un to paveidi";
+        result = "Divriteņi un to paveidi";
     else if(APD == "Pozitīva" && TLV == "Personāls" && STL == "Kompaktums" && TLA == "5-15")
         result = "Divriteņi un to paveidi";
     else if(APD == "Pozitīva" && TLV == "Koplietojams" && STL == "Kompaktums" && TLA == "5-15")
         result = "Divriteņi un to paveidi";
 
     else if (APD == "Pozitīva" && TLV == "Personāls" && STL == "Elastīgums" && TLA == "15-25")
-        result = "Elektriskie skrejriteni"
+        result = "Elektriskie skrejriteņi"
+    else if (APD == "Pozitīva" && TLV == "Personāls" && STL == "Kompaktums" && TLA == "15-25")
+        result = "Elektriskie skrejriteņi"
         
     else if (APD == "" || TLV == "" || STL == "" || TLA == "")
         result = "Parametri nav izvēlēti";
