@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/Wolferado/Expert_System_Transport/static/css/main.8c1fac8d.css",
-    "main.js": "/Wolferado/Expert_System_Transport/static/js/main.f928b0fd.js",
-    "index.html": "/Wolferado/Expert_System_Transport/index.html",
-    "main.8c1fac8d.css.map": "/Wolferado/Expert_System_Transport/static/css/main.8c1fac8d.css.map",
-    "main.f928b0fd.js.map": "/Wolferado/Expert_System_Transport/static/js/main.f928b0fd.js.map"
+    "main.css": "/static/css/main.8c1fac8d.css",
+    "main.js": "/static/js/main.f928b0fd.js",
+    "index.html": "/index.html",
+    "main.8c1fac8d.css.map": "/static/css/main.8c1fac8d.css.map",
+    "main.f928b0fd.js.map": "/static/js/main.f928b0fd.js.map"
   },
   "entrypoints": [
     "static/css/main.8c1fac8d.css",
