@@ -1,70 +1,49 @@
-# Getting Started with Create React App
+# Expert_Systen_Transport - Zināšanu balstīta ekspērtu sistēma
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Repozitorijs tiks arhivēts, jo sistēma ir derīga un tika apskatīta.
 
-## Available Scripts
+Šis repozitorijs satur izveidoto ekspertu sistēmu, kura ir balstīta uz IF-THEN likumiem.
 
-In the project directory, you can run:
+Ekspertu sistēma risina problēmu - "Kādu transporta līdzekli es gribu izmantot šodien?"
 
-### `npm start`
+Ekspertu sistēma ir pieejama [šeit](https://wolferado.github.io/Expert_System_Transport/).
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Darbības princips
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Ir 4 atribūti, kuriem var izvēlēties vienu no piedāvātām vērtībām:
+1. Kāda ir mana attieksme pret dabu? jeb **APD** _(Pozitīva / Neitrāla)_ 
+2. Kāds transporta līdzekļa ir vajadzīgs? jeb **TLB** _(Personāls / Koplietojams / Sabiedriskais)_
+3. Kas ir svarīgs transporta līdzeklī? jeb **STL** _(Elastīgums / Kompaktums / Budžets)_
+4. Kāds ir transporta līdzekļa maksimālais ātrums? jeb **MA** _(5-15 / 15-25 / 25+ km/st.)_
 
-### `npm test`
+Balstoties uz izvēlētām vērtībām, tiks izveidots 1 piedāvājums no saraksta:
+- Automašīna;
+- Sabiedriskais transports (autobuss);
+- Ekoloģisks sabiedriskais transports (ūdeņraža elektriskais 
+trolejbuss, elektriskais vilciens);
+- Divriteņi un to paveidi;
+- Elektriskie skrejriteni;
+- Nav atbilstoša piedāvājuma (ja nav atrasta kombinācija ZB);
+- Parametri nav izvēlēti (no sākuma).
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### IF-THEN likumi:
+| IF daļas saturs | THEN daļas saturs |
+| --------------- | ----------------- |
+| IF **APD** ir “neitrāla” AND **TLV** ir “personāls” AND **STL** ir “elastīgums” AND **MA** ir “25+”| THEN **Piedāvājums** ir “Automašīna” |
+| IF **APD** ir “neitrāla” AND **TLV** ir “koplietojams” AND **STL** ir “elastīgums” AND **MA** ir “25+” | THEN **Piedāvājums** ir “Automašīna” |
+| IF **APD** ir “neitrāla” AND **TLV** ir “sabiedriskais” AND **STL** ir “budžets” AND **MA** ir “25+” |THEN **Piedāvājums** ir “Sabiedriskais transports” |
+| IF **APD** ir “pozitīva” AND **TLV** ir “sabiedriskais” AND **STL** ir “budžets” AND **MA** ir “25+” | THEN **Piedāvājums** ir “Ekoloģisks sabiedriskais transports” |
+|IF **APD** ir “pozitīva” AND **TLV** ir “personāls” AND **STL** ir “elastīgums” AND **MA** ir “5-15” | THEN **Piedāvājums** ir “Divriteņi un to paveidi” |
+| IF **APD** ir “pozitīva” AND **TLV** ir “koplietojams” AND **STL** ir “elastīgums” AND **MA** ir “5-15” | THEN **Piedāvājums** ir “Divriteņi un to paveidi” |
+| IF **APD** ir “pozitīva” AND **TLV** ir “personāls” AND **STL** ir “kompaktums” AND **MA** ir “5-15” | THEN **Piedāvājums** ir “Divriteņi un to paveidi” |
+| IF **APD** ir “pozitīva” AND **TLV** ir “koplietojams” AND **STL** ir “kompaktums” AND **MA** ir “5-15” | THEN **Piedāvājums** ir “Divriteņi un to paveidi” |
+| IF **APD** ir “pozitīva” AND **TLV** ir “personāls” AND **STL** ir “elastīgums” AND **MA** ir “15-25” | THEN **Piedāvājums** ir “Elektriskie skrejriteņi” |
+| IF **APD** ir “pozitīva” AND **TLV** ir “personāls” AND **STL** ir “kompaktums” AND **MA** ir “15-25” | THEN **Pieedāvājums** ir “Elektriskie skrejriteņi” |
 
-### `npm run build`
+Šī ekspertu sistēma tika izveidota priekš kursa "Mūsdienu mākslīga intelekta speciālās nodaļas".
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Izskats:
+<div>
+  <img src=https://github.com/Wolferado/Expert_System_Transport/blob/main/materials/Screenshot%202023-06-19%20160539.png?raw=true width=49% height=49%/>
+  <img src=https://github.com/Wolferado/Expert_System_Transport/blob/main/materials/Screenshot%202023-06-19%20160558.png?raw=true width=49% height=49%/>)
+</div>
