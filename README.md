@@ -1,14 +1,17 @@
-# Expert_Systen_Transport - Zināšanu balstīta ekspērtu sistēma
+# Expert_System_Transport - Zināšanu balstīta ekspērtu sistēma
 
-## Repozitorijs tiks arhivēts, jo sistēma ir derīga un tika apskatīta.
+> [!WARNING]
+> Šis repozitorijs tika arhivēts, tāpēc kā:
+> - Ekspertu sistēma ir derīga un tika ieskaitīta.
 
-Šis repozitorijs satur izveidoto ekspertu sistēmu, kura ir balstīta uz IF-THEN likumiem.
+> [!NOTE]
+> Tas ir repozitorijs, kurš satur izveidoto ekspertu sistēmu RTU kursā "Mūsdienu mākslīgā intelekta speciālās nodaļas", kura ir balstīta uz IF-THEN likumiem.
 
-Ekspertu sistēma risina problēmu - "Kādu transporta līdzekli es gribu izmantot šodien?"
+Ekspertu sistēma risina problēmu - **"Kādu transporta līdzekli es gribu izmantot šodien?"**
 
 Ekspertu sistēma ir pieejama [šeit](https://wolferado.github.io/Expert_System_Transport/).
 
-### Darbības princips
+### Ekspertu sistēmas darbības princips
 
 Ir 4 atribūti, kuriem var izvēlēties vienu no piedāvātām vērtībām:
 1. Kāda ir mana attieksme pret dabu? jeb **APD** _(Pozitīva / Neitrāla)_ 
@@ -16,7 +19,7 @@ Ir 4 atribūti, kuriem var izvēlēties vienu no piedāvātām vērtībām:
 3. Kas ir svarīgs transporta līdzeklī? jeb **STL** _(Elastīgums / Kompaktums / Budžets)_
 4. Kāds ir transporta līdzekļa maksimālais ātrums? jeb **MA** _(5-15 / 15-25 / 25+ km/st.)_
 
-Balstoties uz izvēlētām vērtībām, tiks izveidots 1 piedāvājums no saraksta:
+Balstoties uz izvēlētām vērtībām, tiks izveidots **1 piedāvājums** no saraksta:
 - Automašīna;
 - Sabiedriskais transports (autobuss);
 - Ekoloģisks sabiedriskais transports (ūdeņraža elektriskais 
@@ -39,8 +42,6 @@ trolejbuss, elektriskais vilciens);
 | IF **APD** ir “pozitīva” AND **TLV** ir “koplietojams” AND **STL** ir “kompaktums” AND **MA** ir “5-15” | THEN **Piedāvājums** ir “Divriteņi un to paveidi” |
 | IF **APD** ir “pozitīva” AND **TLV** ir “personāls” AND **STL** ir “elastīgums” AND **MA** ir “15-25” | THEN **Piedāvājums** ir “Elektriskie skrejriteņi” |
 | IF **APD** ir “pozitīva” AND **TLV** ir “personāls” AND **STL** ir “kompaktums” AND **MA** ir “15-25” | THEN **Pieedāvājums** ir “Elektriskie skrejriteņi” |
-
-Šī ekspertu sistēma tika izveidota priekš kursa "Mūsdienu mākslīga intelekta speciālās nodaļas".
 
 ### Izskats:
 <div>
